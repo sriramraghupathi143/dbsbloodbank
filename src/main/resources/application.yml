@@ -1,0 +1,25 @@
+cloud:
+  aws:
+    credentials:
+      access-key: AKIA4VACHIE4DCVOQRNT
+      secret-key: 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
+    region:
+      static: eu-west-1
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: bloodbankstorage
+
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2MB
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+server:
+  port: 9090
