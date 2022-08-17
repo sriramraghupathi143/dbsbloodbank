@@ -70,10 +70,11 @@ public class DonorController {
 	}
 	@GetMapping("/getDonationRequestByName/{username}")
 	public List<Donation> getDonationRequestByName(@PathVariable String username) {
-		return donorServices.getDonationByName(username);
+		List<Donation> donationList=donorServices.getDonationByName(username);
+		return donationList;
 	}
 	
-	
+	 
 	@GetMapping("/getDonorById/{id}")
 	public Donor getDonorById(@PathVariable Long id) {
 		return donorServices.getDonorById(id);
